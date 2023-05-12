@@ -439,7 +439,7 @@ const algodClient = new algosdk.Algodv2(
 
   export async function update(assetId: number, claimedByAddress: string) {
     //get asset info from indexer
-    let { data } = await axios.get(`https://mainnet-idx.algonode.cloud/v2/assets/1103240745?include-all=true`);
+    let { data } = await axios.get(`https://mainnet-idx.algonode.cloud/v2/assets/${assetId}?include-all=true`);
     let metadata: Metadata = await getARC19Data(data);
     const assetInfo = data['asset'];
     //get metadata object
