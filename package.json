@@ -20,6 +20,7 @@
   "dependencies": {
     "@pinata/sdk": "^1.1.25",
     "algosdk": "^1.15.0",
+    "axios": "^1.4.0",
     "dotenv": "^16.0.0",
     "multiformats": "^9.6.4"
   },
